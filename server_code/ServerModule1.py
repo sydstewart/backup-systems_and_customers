@@ -19,15 +19,10 @@ def export_to_csv():
 @anvil.server.background_task
 @anvil.server.callable
 def make_backup():
-    list_of_tables =['cases_arriving','changes','charts'
-                     ,'printing_problems','problem_cases_over_3_days', \
-                     'problem_cases_per_week','problem_cases_with_4s', \
-                     'problem_cases_with_customer', 'projects', \
-                     'projects_with_4s','projects_with_customers', \
-                     'test','unassigned_cases','users','waiting_on_4s','problems_with_customers_over_7_days']
-    folder = app_files.spc_support_system_backup
+    list_of_tables = ['application_area', 'geography','interface_types','last_date_refreshed','location','suppported_products','test','users']
+    folder = app_files.systems_and_customers_tables_backup
     today = datetime.now()
-    new_folder = folder.create_folder('spc_backup'+'_'+str(today))
+    new_folder = folder.create_folder('systems_backup'+'_'+str(today))
     for item in list_of_tables:
        print(item)
              # rows = getattr(app_tables, 'tablename').search()

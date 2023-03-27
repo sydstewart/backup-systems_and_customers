@@ -3,7 +3,7 @@ scheduled_tasks:
   time_spec:
     n: 1
     every: day
-    at: {minute: 0, hour: 11}
+    at: {minute: 0, hour: 19}
   job_id: CSEAIMCX
 dependencies: []
 services:
@@ -109,120 +109,62 @@ services:
       modifiedDate: '2023-03-26T15:27:04.141Z'
       quotaBytesUsed: '0'
       ownerNames: [Syd Stewart]
-  server_config: {}
+    - capabilities: {canEdit: true, canCopy: false}
+      editable: true
+      copyable: false
+      embedLink: https://drive.google.com/embeddedfolderview?id=1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6
+      copyRequiresWriterPermission: false
+      python_name: systems_and_customers_tables_backup
+      explicitlyTrashed: false
+      lastModifyingUser:
+        displayName: Syd Stewart
+        kind: drive#user
+        isAuthenticatedUser: true
+        permissionId: 06139115947875066540
+        emailAddress: stewartsyd70@gmail.com
+        picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
+      shared: false
+      createdDate: '2023-03-27T11:51:04.356Z'
+      id: 1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6
+      owners:
+      - displayName: Syd Stewart
+        kind: drive#user
+        isAuthenticatedUser: true
+        permissionId: 06139115947875066540
+        emailAddress: stewartsyd70@gmail.com
+        picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
+      markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
+      spaces: [drive]
+      parents:
+      - {selfLink: 'https://www.googleapis.com/drive/v2/files/1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6/parents/0AFZ846S7fbL-Uk9PVA',
+        id: 0AFZ846S7fbL-Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AFZ846S7fbL-Uk9PVA'}
+      labels: {viewed: true, restricted: false, starred: false, hidden: false, trashed: false}
+      iconLink: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder
+      selfLink: https://www.googleapis.com/drive/v2/files/1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6
+      lastViewedByMeDate: '2023-03-27T11:51:04.356Z'
+      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6/permissions/me',
+        etag: '"lYTprH3YpHRnsO5tlqSFTohWJxE"', pendingOwner: false}
+      lastModifyingUserName: Syd Stewart
+      etag: '"MTY3OTkxNzg2NDM1Ng"'
+      kind: drive#file
+      modifiedByMeDate: '2023-03-27T11:51:04.356Z'
+      title: systems_and_customers_tables_backup
+      version: '1'
+      appDataContents: false
+      writersCanShare: true
+      alternateLink: https://drive.google.com/drive/folders/1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6
+      mimeType: application/vnd.google-apps.folder
+      modifiedDate: '2023-03-27T11:51:04.356Z'
+      quotaBytesUsed: '0'
+      ownerNames: [Syd Stewart]
+  server_config: {enc_delegation_refresh_token: FT4VpFLk4rRQ5mkDXF56SMIQ4oSkp5kOZHotVTXdBq6GdQTeQ3kk4pKWB15jhP20saFjtMgsVziKUqCee2aGkQctfRCo1zFsuJ1yaxSxJAhqSiUHiixXNTxTzPa2vuQJmXsVidyLq/lm1456ykFHefEs5AwJyN5x8AllCNkJypN0uryf2aMwcQA64+Nuoa9bw3qU16MKiMx2Bcr2hGGS71ksWkcDePQEnzqXbKcXIBweFtiSse0/r0sC4eqV9xPMNJl1Xd33BgCKVFyg+c1lKJbkUcNSjE+sFKmSFfjesQCAkVt9Jilyu9y8vbfj/g==}
 package_name: Backup_Change_Notes
 allow_embedding: false
-name: Clone of Backup SPC System
+name: Backup of Systems and Customers System
 runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
-metadata: {title: Backup SPC System}
+metadata: {title: Backup of Systems and Customers System}
 startup_form: Form1
 db_schema:
-  waiting_on_4s:
-    title: Waiting_on_4S
-    client: search
-    server: full
-    columns:
-    - name: Date_Entered
-      admin_ui: {width: 327}
-      type: datetime
-    - name: Measure_Value
-      admin_ui: {width: 200}
-      type: number
-    - name: exclude_point
-      admin_ui: {width: 200}
-      type: bool
-    - name: noteCol
-      admin_ui: {width: 200}
-      type: string
-  problem_cases_per_week:
-    title: problem_cases_per_week
-    client: search
-    server: full
-    columns:
-    - name: Date_Entered
-      admin_ui: {width: 313}
-      type: datetime
-    - name: Measure_Value
-      admin_ui: {width: 200}
-      type: number
-    - name: exclude_point
-      admin_ui: {width: 200}
-      type: bool
-    - name: noteCol
-      admin_ui: {width: 200}
-      type: string
-  problem_cases_with_4s:
-    title: problem_cases_with_4s
-    client: search
-    server: full
-    columns:
-    - name: Date_Entered
-      admin_ui: {width: 200}
-      type: datetime
-    - name: Measure_Value
-      admin_ui: {width: 200}
-      type: number
-    - name: exclude_point
-      admin_ui: {width: 200}
-      type: bool
-    - name: noteCol
-      admin_ui: {width: 200}
-      type: string
-  charts:
-    title: charts
-    client: search
-    server: full
-    columns:
-    - name: chartid
-      admin_ui: {width: 200}
-      type: number
-    - name: Chart_Name
-      admin_ui: {width: 296}
-      type: string
-    - name: order
-      admin_ui: {width: 200}
-      type: number
-    - name: ChartSQL
-      admin_ui: {width: 251}
-      type: string
-    - name: Active
-      admin_ui: {width: 200}
-      type: bool
-    - name: StartDate
-      admin_ui: {width: 200}
-      type: date
-    - name: EndDate
-      admin_ui: {width: 200}
-      type: date
-    - name: Date_Column_Name
-      admin_ui: {width: 200}
-      type: string
-    - name: Measure_Column_Name
-      admin_ui: {width: 200}
-      type: string
-    - name: Source
-      admin_ui: {width: 200}
-      type: string
-    - name: tablename
-      admin_ui: {width: 236}
-      type: string
-  unassigned_cases:
-    title: unassigned_cases
-    client: search
-    server: full
-    columns:
-    - name: Date_Entered
-      admin_ui: {width: 200}
-      type: datetime
-    - name: Measure_Value
-      admin_ui: {width: 200}
-      type: number
-    - name: exclude_point
-      admin_ui: {width: 200}
-      type: bool
-    - name: noteCol
-      admin_ui: {width: 200}
-      type: string
   users:
     title: Users
     client: search
@@ -264,191 +206,170 @@ db_schema:
     - name: email_confirmation_key
       admin_ui: {width: 200}
       type: string
-  projects_with_customers:
-    title: projects_with_customers
+  suppported_products:
+    title: suppported_products
     client: search
     server: full
     columns:
-    - name: Date_Entered
-      admin_ui: {width: 200}
-      type: datetime
-    - name: Measure_Value
-      admin_ui: {width: 200}
-      type: number
-    - name: exclude_point
-      admin_ui: {width: 200}
-      type: bool
-    - name: noteCol
+    - name: Name
       admin_ui: {width: 200}
       type: string
-  changes:
-    title: changes
+    - name: Account
+      admin_ui: {width: 200}
+      type: string
+    - name: 4S_Country
+      admin_ui: {width: 200}
+      type: string
+    - name: CFApplicationArea
+      admin_ui: {width: 200}
+      type: string
+    - name: InUseStatus
+      admin_ui: {width: 200}
+      type: string
+    - name: Shipping_Address_Country
+      admin_ui: {width: 200}
+      type: string
+    - name: Location_c
+      admin_ui: {width: 200}
+      type: string
+    - name: longitude
+      admin_ui: {width: 200}
+      type: number
+    - name: latitude
+      admin_ui: {width: 200}
+      type: number
+    - name: Account_id
+      admin_ui: {width: 200}
+      type: string
+    - name: System_id
+      admin_ui: {width: 200}
+      type: string
+    - name: Live_version_no
+      admin_ui: {width: 200}
+      type: string
+    - name: Version_Level
+      admin_ui: {width: 200}
+      type: string
+    - name: Customer_Type
+      admin_ui: {width: 200}
+      type: string
+    - name: Interfaces
+      admin_ui: {width: 574.181818}
+      type: string
+    - name: Inbound_INR
+      admin_ui: {width: 200}
+      type: string
+    - name: Bidirectional_SystmOne
+      admin_ui: {width: 200}
+      type: string
+    - name: Inbound_ADT
+      admin_ui: {width: 200}
+      type: string
+    - name: Inbound_Demographics
+      admin_ui: {width: 200}
+      type: string
+    - name: Inbound_Medications
+      admin_ui: {width: 200}
+      type: string
+    - name: Outbound_Billing
+      admin_ui: {width: 200}
+      type: string
+    - name: Outbound_Dosing
+      admin_ui: {width: 200}
+      type: string
+    - name: Outbound_PDF
+      admin_ui: {width: 200}
+      type: string
+    - name: Outbound_Query
+      admin_ui: {width: 200}
+      type: string
+    - name: Inbound_TestResults
+      admin_ui: {width: 200}
+      type: string
+    - name: Bidirectional_Telehealth
+      admin_ui: {width: 200}
+      type: string
+    - name: AC_Non_AC
+      admin_ui: {width: 200}
+      type: string
+    - name: Operating_System
+      admin_ui: {width: 200}
+      type: string
+    - name: Database_Version
+      admin_ui: {width: 250.01136400000001}
+      type: string
+    - name: Remote_Access_Available
+      admin_ui: {width: 200}
+      type: string
+    - name: appareas
+      admin_ui: {width: 200}
+      type: string
+  last_date_refreshed:
+    title: Last_Date_Refreshed
     client: search
     server: full
     columns:
-    - name: chartid
+    - name: last_date_refreshed
+      admin_ui: {width: 200}
+      type: string
+    - name: dateid
       admin_ui: {width: 200}
       type: number
-    - name: chartname
-      admin_ui: {width: 200}
-      type: string
-    - name: change_type
-      admin_ui: {width: 200}
-      type: string
-    - name: change_date
-      admin_ui: {width: 200}
-      type: datetime
-    - name: new_mean
-      admin_ui: {width: 200}
-      type: number
-    - name: reviewed
-      admin_ui: {width: 200}
-      type: bool
-    - name: short_date
-      admin_ui: {width: 200}
-      type: date
-    - name: tablename
-      admin_ui: {width: 200}
-      type: string
-  projects_with_4s:
-    title: projects_with_4s
+  application_area:
+    title: application_area
     client: search
     server: full
     columns:
-    - name: Date_Entered
-      admin_ui: {width: 200}
-      type: datetime
-    - name: Measure_Value
-      admin_ui: {width: 200}
-      type: number
-    - name: exclude_point
-      admin_ui: {width: 200}
-      type: bool
-    - name: noteCol
+    - name: application_area
       admin_ui: {width: 200}
       type: string
-  problem_cases_with_customer:
-    title: problem_cases_with_customer
+    - name: app_group
+      admin_ui: {width: 200}
+      type: string
+  geography:
+    title: Geography
     client: search
     server: full
     columns:
-    - name: Date_Entered
-      admin_ui: {width: 285}
-      type: datetime
-    - name: Measure_Value
-      admin_ui: {width: 200}
-      type: number
-    - name: exclude_point
-      admin_ui: {width: 200}
-      type: bool
-    - name: noteCol
+    - name: placename
       admin_ui: {width: 200}
       type: string
-  projects:
-    title: projects
+    - name: coordinates
+      admin_ui: {width: 386.011364}
+      type: string
+  location:
+    title: Location
     client: search
     server: full
     columns:
-    - name: company
-      admin_ui: {width: 200}
+    - name: location_name
+      admin_ui: {width: 338}
       type: string
-    - name: projectname
-      admin_ui: {width: 305}
-      type: string
-    - name: status
+    - name: latitude
       admin_ui: {width: 200}
-      type: string
-    - name: boardname
+      type: number
+    - name: longitude
       admin_ui: {width: 200}
-      type: string
-    - name: startdate
-      admin_ui: {width: 200}
-      type: date
-    - name: enddate
-      admin_ui: {width: 200}
-      type: date
-  printing_problems:
-    title: Printing_problems
+      type: number
+  interface_types:
+    title: Interface_Types
     client: search
     server: full
     columns:
-    - name: Date_Entered
-      admin_ui: {width: 200}
-      type: datetime
-    - name: Measure_Value
-      admin_ui: {width: 200}
-      type: number
-    - name: exclude_point
-      admin_ui: {width: 200}
-      type: bool
-    - name: noteCol
-      admin_ui: {width: 200}
-      type: string
-  problem_cases_over_3_days:
-    title: problem_cases_over_3_days
-    client: search
-    server: full
-    columns:
-    - name: Date_Entered
-      admin_ui: {width: 200}
-      type: datetime
-    - name: Measure_Value
-      admin_ui: {width: 200}
-      type: number
-    - name: exclude_point
-      admin_ui: {width: 200}
-      type: bool
-    - name: noteCol
+    - name: Interface_Type
       admin_ui: {width: 200}
       type: string
   test:
-    title: Test
+    title: test
     client: search
     server: full
     columns:
-    - name: Date_Entered
-      admin_ui: {width: 324}
-      type: datetime
-    - name: Measure_Value
-      admin_ui: {width: 200}
-      type: number
-    - name: exclude_point
-      admin_ui: {width: 200}
-      type: bool
-    - name: noteCol
+    - name: name
       admin_ui: {width: 200}
       type: string
-  problems_with_customers_over_7_days:
-    title: problems_with_customers_over_7_days
-    client: search
-    server: full
-    columns:
-    - name: Date_Entered
-      admin_ui: {width: 200}
-      type: datetime
-    - name: Measure_Value
-      admin_ui: {width: 200}
-      type: number
-    - name: exclude_point
-      admin_ui: {width: 200}
-      type: bool
-    - name: noteCol
+    - name: employed
       admin_ui: {width: 200}
       type: string
-  cases_arriving:
-    title: cases_arriving
-    client: search
-    server: full
-    columns:
-    - name: Date_Entered
-      admin_ui: {width: 200}
-      type: datetime
-    - name: Measure_Value
-      admin_ui: {width: 200}
-      type: number
-    - name: exclude_point
-      admin_ui: {width: 200}
-      type: bool
-    - name: noteCol
+    - name: age
       admin_ui: {width: 200}
       type: string
