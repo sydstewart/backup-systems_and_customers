@@ -1,3 +1,4 @@
+import anvil.email
 import anvil.google.auth, anvil.google.drive, anvil.google.mail
 from anvil.google.drive import app_files
 import anvil.tables as tables
@@ -34,5 +35,15 @@ def make_backup():
        filename0 = item + '_' +str(today)+' .csv'
        new_file0 = new_folder.create_file(filename0, table_csv)
        filelist = filelist + filename0 + '\n' 
+        
 
+    address ='syd'
+    send_email(address, filelist)
 
+@anvil.server.callable
+def send_email(address,filename0, filename1,filename2, filename3):
+    anvil.email.send(
+                 from_name = "Syste Backup", 
+                 to = "sydney.w.stewart@gmail.com",
+                 subject = 'Change Note Backup Run',
+                 text = filelist)

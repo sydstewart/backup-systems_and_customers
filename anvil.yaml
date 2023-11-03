@@ -3,7 +3,7 @@ scheduled_tasks:
   time_spec:
     n: 1
     every: day
-    at: {minute: 50, hour: 10}
+    at: {minute: 55, hour: 10}
   job_id: CSEAIMCX
 dependencies: []
 services:
@@ -158,6 +158,9 @@ services:
       quotaBytesUsed: '0'
       ownerNames: [Syd Stewart]
   server_config: {enc_delegation_refresh_token: FT4VpFLk4rRQ5mkDXF56SMIQ4oSkp5kOZHotVTXdBq6GdQTeQ3kk4pKWB15jhP20saFjtMgsVziKUqCee2aGkQctfRCo1zFsuJ1yaxSxJAhqSiUHiixXNTxTzPa2vuQJmXsVidyLq/lm1456ykFHefEs5AwJyN5x8AllCNkJypN0uryf2aMwcQA64+Nuoa9bw3qU16MKiMx2Bcr2hGGS71ksWkcDePQEnzqXbKcXIBweFtiSse0/r0sC4eqV9xPMNJl1Xd33BgCKVFyg+c1lKJbkUcNSjE+sFKmSFfjesQCAkVt9Jilyu9y8vbfj/g==}
+- source: /runtime/services/anvil/email.yml
+  client_config: {}
+  server_config: {test_mode: true}
 package_name: Backup_Change_Notes
 allow_embedding: false
 name: Backup of Systems and Customers System
