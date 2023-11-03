@@ -41,9 +41,9 @@ def make_backup():
     send_email(address, filelist)
 
 @anvil.server.callable
-def send_email(address,filename0, filename1,filename2, filename3):
+def send_email(address,filelist):
     anvil.email.send(
-                 from_name = "Syste Backup", 
+                 from_name = "Systems and Customer Backup", 
                  to = "sydney.w.stewart@gmail.com",
-                 subject = 'Change Note Backup Run',
+                 subject = 'Systems and Customer Backup Run',
                  text = filelist)
