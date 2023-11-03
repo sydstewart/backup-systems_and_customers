@@ -33,6 +33,6 @@ def make_backup():
        table_csv = getattr(app_tables, db_name).search().to_csv()
        filename0 = item + '_' +str(today)+' .csv'
        new_file0 = new_folder.create_file(filename0, table_csv)
-       filelist = filelist + filename0 + '\n' +
+       filelist = filelist + filename0 + '\n' 
 
 
